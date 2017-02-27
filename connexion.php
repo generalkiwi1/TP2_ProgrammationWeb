@@ -12,9 +12,9 @@
 			<button type="Submit" value="Submit">Connexion</button>
 			<p id="erreur"></p>
 			<?php 
-				if(isset($_POST['erreur']) && !empty($_POST['erreur'])) 
+				if(isset($_GET['erreur']) && !empty($_GET['erreur'])) 
 				{
-				 	echo $_POST['erreur'];
+				 	echo $_GET['erreur'];
 				} 
 			 ?>	
 		</form>
