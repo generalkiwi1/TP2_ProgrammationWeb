@@ -1,6 +1,3 @@
-<?php
-	include 'connexion.php'; 
- ?>
 <!doctype html>
 <html lang="fr">
 <head>
@@ -11,7 +8,7 @@
 </head>
 <body>
 	<?php
-		echo 'connexion.php'; 
-	 ?>
+		include 'connexion.php'; 
+ 	?>
 </body>
 </html>
