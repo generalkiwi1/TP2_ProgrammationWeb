@@ -7,5 +7,14 @@
 	<script src="js/script.js"></script>
 </head>
 <body>
+	<div id="gabarit">
+		<?php
+			include "entete.php";
+			
+			include "banniere.php";
+			
+			include "piedpage.php";
+		?>
+	</div>
 </body>
 </html>
