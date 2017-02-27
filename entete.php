@@ -1,7 +1,9 @@
 <?php
 
 	echo '<div id="logo">'.'</div>'; // Lieu logo
-	echo '<div id="zoneconnexion">'.'</div>'; // Lieu lien connection
+	echo '<div id="zoneconnexion">'
+			.'<a href="connexion.php">Connexion</a>'
+		.'</div>'; // Lieu lien connection
 	echo '<div id="titre">'.'</div>'; // Titre (À déterminer)
 	echo '<div class="cleardiv">'.'</div>';
 	echo '<div id="menu">' // Menu
