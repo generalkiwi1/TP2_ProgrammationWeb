@@ -10,5 +10,8 @@
 	<script src="js/script.js"></script>
 </head>
 <body>
+	<?php
+		echo 'connexion.php'; 
+	 ?>
 </body>
 </html>
