@@ -1,6 +1,3 @@
-<?php
-	include titre;
-?>
 
 <!doctype html>
 <html lang="fr">
@@ -12,26 +9,25 @@
 </head>
 	<body>
 		<div id="gabarit"> 
-		
-			// Début Entête visible
-			<div id="logo">'.'</div> // Lieu logo
+
+			<div id="logo">'.'</div>
 			<div id="zoneconnexion">
 					<a href="connexion.php">Connexion</a>
-			/div> // Lieu lien connection
-			<div id="titre"></div> // Titre (À déterminer)
+			</div> 
+			<div id="titre"></div> 
 			<div class="cleardiv"></div>
-			<div id="menu">// Menu
+			<div id="menu">
 				<div class="itembar">
-					<a href="index.php">Accueil</a> //lien 1
+					<a href="index.php">Accueil</a> 
 				</div>
 				<div class="itembar">
-					<a href="avenir.php">Avenir</a> //lien 2
+					<a href="avenir.php">Avenir</a> 
+				</div> 
+				<div class="itembar">
+					<a href="enregistrement.php">Enregistrement</a>
 				</div>
 				<div class="itembar">
-					<a href="enregistrement.php">Enregistrement</a> //lien 3
-				</div>
-				<div class="itembar">
-					<a href="recherche.php">Recherche</a> //lien 4
+					<a href="recherche.php">Recherche</a> 
 				</div>
 			</div>
 		<div class="cleardiv"></div> 
