@@ -1,12 +1,12 @@
-<div id="banniere">
-	
-</div>
-<div id="contenu">
-	<?php
-		include 'connexion.php'; 
-	 ?>	
-</div> 
-<div class="cleardiv">
-		
-</div>
 
+<div>
+	<div id="banniere">
+	
+	</div>
+	<div id="contenu">
+	
+	</div> 
+	<div class="cleardiv">
+		
+	</div>
+</div>
