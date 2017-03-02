@@ -3,7 +3,9 @@
 	include "banniere.php";
 ?>	
 	<div id="contenu">
-		
+		<p>
+			
+		</p>
 	</div>
 	<div class="cleardiv">
 		
