@@ -1,8 +1,14 @@
-<?php
-
-	echo '<div id="banniere">'.'</div>'; // Code pour la bannière
-	echo '<div id="contenu">'.'</div>'; // Contenu temporaire
-	echo '<div class="cleardiv">'.'</div>';
 
 
-?>
+	<div id="banniere">
+	<?php
+		include 'connexion.php'; 
+	 ?>	
+	 </div>// Code pour la bannière
+	<div id="contenu">
+		
+	</div>; // Contenu temporaire
+	<div class="cleardiv">
+		
+	</div>;
+
