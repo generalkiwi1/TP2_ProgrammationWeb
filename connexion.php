@@ -6,6 +6,13 @@
 	<link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
+	<?php
+		include "entete.php";
+	
+		include "banniere.php";
+	
+		include "piedpage.php";
+	?>	
 	<div id="contenu">
 		<form action="traitementconnexion.php" method="post">
 			Nom d'utilisateur: <input type="text" name="username" maxlength="8"><br>
