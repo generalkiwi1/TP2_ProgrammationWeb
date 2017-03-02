@@ -1,8 +1,37 @@
 <?php 
 	session_start();
 
-	$_SESSION['username'] = $_POST['username']; 
+	define("USERNAME1", "9vies");
+	define("PASSWORD1", "psswrd12");
+	define("USERNAME2", "Generalkiwi");
+	define("PASSWORD2", "passwrd23");
 
-	header('Location:connexion.php?erreur=OK');
+	$_SESSION['username'] = $_POST['username']; 
+	$_SESSION['password'] = $_POST['password'];
+
+	if ($_SESSION['username'] == USERNAME1 && $_SESSION['password'] == PASSWORD1) 
+	{
+		header('Location:connexion.php?erreur=9vies est connecté');
+	}
+	else if ($_SESSION['username'] == USERNAME2 && $_SESSION['password'] == PASSWORD2) 
+	{
+		header('Location:connexion.php?erreur=Generalkiwi est connecté');
+	}
+	else
+	{
+		header('Location:connexion.php?erreur=Nom d\'utilisateur ou mot de passe incorrect');
+	}
+
+	function ValiderUtilisateur()
+	{
+		if ($_SESSION['username'] == USERNAME1 && $_SESSION['password'] == PASSWORD1) 
+		{
+			header('Location:connexion.php?erreur=9vies est connecté');
+		}
+		else if ($_SESSION['username'] == USERNAME2 && $_SESSION['password'] == PASSWORD2) 
+		{
+			header('Location:connexion.php?erreur=Generalkiwi est connecté');
+		}
+	}
 
  ?>

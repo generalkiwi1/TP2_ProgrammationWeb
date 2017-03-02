@@ -1,12 +1,4 @@
 <?php
-	
-	echo '<html lang="fr">'; 
-	echo '<head>'; 
-		echo '<meta charset="UTF-8">'; 
-		echo '<title>Recherche</title>'; 
-		echo '<link href="css/styles.css" rel="stylesheet" />'; 
-		echo '<script src="js/script.js"></script>'; 
-	echo '</head>'; 
 	echo '<body>'; 
 		echo '<div id="gabarit">'; 
 		
