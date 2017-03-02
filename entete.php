@@ -1,4 +1,3 @@
-
 <!doctype html>
 <html lang="fr">
 <head>
@@ -10,11 +9,13 @@
 	<body>
 		<div id="gabarit"> 
 
-			<div id="logo">'.'</div>
+			<div id="logo"><img src="img/Logo/logo.png" alt="logo" /></div>
 			<div id="zoneconnexion">
 					<a href="connexion.php">Connexion</a>
 			</div> 
-			<div id="titre"></div> 
+			<div id="titre"> 
+				<p>Global Gaming Community</p>
+			</div> 
 			<div class="cleardiv"></div>
 			<div id="menu">
 				<div class="itembar">

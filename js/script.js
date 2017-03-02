@@ -1,8 +1,10 @@
-var tableau = ["img/tokyo.jpg","img/londre.jpg","img/paris.jpg","img/moscow.jpg"]; //Banque d'image
-var compteur = 0;
 
-var timer = setInterval(mycode, 10000); // Timer
-function MyTimer() {
+var tableau = ["img/ville/londre.jpg","img/ville/moscow.jpg","img/ville/paris.jpg","img/ville/tokyo.jpg"];
+var compteur = 0;
+var timer = setInterval(mytimer, 10000);
+
+
+function mytimer() {
 		if (compteur == 3)
 	{
 		compteur = -1;
