@@ -7,18 +7,21 @@
 	define("PASSWORD2", "passwrd23");
 
 	$_SESSION['username'] = $_POST['username']; 
+	$_SESSION['password'] = $_POST['password'];
 
 	function ValiderUtilisateur()
 	{
-		if ($_POST['username'] == USERNAME1 && $_POST['password'] == PASSWORD1) 
+		if ($_SESSION['username'] == USERNAME1 && $_SESSION['password'] == PASSWORD1) 
 		{
 			header('Location:connexion.php?erreur=9vies est connecté');
 		}
-		else if ($_POST['username'] == USERNAME2 && $_POST['password'] == PASSWORD2) 
+		else if ($_SESSION['username'] == USERNAME2 && $_SESSION['password'] == PASSWORD2) 
 		{
 			header('Location:connexion.php?erreur=Generalkiwi est connecté');
 		}
 	}
+
+	ValiderUtilisateur();
 
 	
 
