@@ -9,6 +9,15 @@
 	$_SESSION['username'] = $_POST['username']; 
 	$_SESSION['password'] = $_POST['password'];
 
+	if ($_SESSION['username'] == USERNAME1 && $_SESSION['password'] == PASSWORD1) 
+	{
+		header('Location:connexion.php?erreur=9vies est connecté');
+	}
+	else if ($_SESSION['username'] == USERNAME2 && $_SESSION['password'] == PASSWORD2) 
+	{
+		header('Location:connexion.php?erreur=Generalkiwi est connecté');
+	}
+
 	function ValiderUtilisateur()
 	{
 		if ($_SESSION['username'] == USERNAME1 && $_SESSION['password'] == PASSWORD1) 
@@ -20,9 +29,5 @@
 			header('Location:connexion.php?erreur=Generalkiwi est connecté');
 		}
 	}
-
-	ValiderUtilisateur();
-
-	
 
  ?>
