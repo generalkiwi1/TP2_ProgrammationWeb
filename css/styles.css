@@ -1,0 +1,72 @@
+#gabarit {
+	width:1024px;
+	margin:auto;
+	padding:0px;
+}
+
+#logo {
+	float:left;
+	width:200px;
+	height:200px;
+	background-color:blue;
+	padding:0px;
+}
+
+#titre {
+	float: right;
+	width: 824px;
+	height: 150px;	
+	background-color:black;
+	padding:0px;
+}
+
+#zoneconnexion {
+	float:right;
+	width: 824px;
+	height: 50px;
+	background-color:yellow;
+	text-align:right;
+}
+
+.cleardiv {
+	clear:both;
+}
+
+#menu {
+	width:100%;
+	height: 50px;
+	float:left;
+	background-color:red;
+	padding:0px;
+}
+
+.itembar {
+	width:25%;
+	float:left;
+	height:100%;
+	text-align:center;	
+	padding:0px;
+}
+
+#banniere {
+	float:left;
+	width:200px;
+	height:800px;
+	background-color:green;
+	padding:0px;
+}
+
+#contenu {
+	float:right;
+	width:824px;
+	height:800px;
+	background-color:brown;
+	padding:0px;
+}
+
+#pieddepage {
+	width:1024px;
+	height:100px;
+	background-color:gray;
+	padding:0px;
+}
