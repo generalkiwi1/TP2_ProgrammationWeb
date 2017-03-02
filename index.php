@@ -12,9 +12,9 @@
 		include "banniere.php";
 	
 		include "piedpage.php";
-	?>
+	?>	
 	<div id="contenu">
 		
-	</div>	
+	</div>
 </body>
 </html>
