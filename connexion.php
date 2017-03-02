@@ -5,7 +5,7 @@
 	<title>Connexion</title>
 </head>
 <body>
-	<div>
+	<div id="contenu">
 		<form action="traitementconnexion.php" method="post">
 			Nom d'utilisateur: <input type="text" name="username" maxlength="8"><br>
 			Mot de passe: <input type="password" name="password" maxlength="8"><br>
