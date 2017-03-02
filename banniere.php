@@ -1,13 +1,13 @@
 
 
 	<div id="banniere">
-	<?php
+	
+	 </div>
+	<div id="contenu">
+		<?php
 		include 'connexion.php'; 
 	 ?>	
-	 </div>// Code pour la bannière
-	<div id="contenu">
-		
-	</div>; // Contenu temporaire
+	</div>; 
 	<div class="cleardiv">
 		
 	</div>;
