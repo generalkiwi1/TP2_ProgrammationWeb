@@ -19,7 +19,7 @@
 	}
 	else
 	{
-		header('Location:connexion.php?erreur=Nom d\'utilisateur ou mot de passe incorrect')
+		header('Location:connexion.php?erreur=Nom d\'utilisateur ou mot de passe incorrect');
 	}
 
 	function ValiderUtilisateur()
