@@ -17,7 +17,7 @@
 			 ?>	
 		</form>
  	</div>
- 	<div id="cleardiv">
+ 	<div class="cleardiv">
  		
  	</div>
  <?php 
