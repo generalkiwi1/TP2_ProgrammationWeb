@@ -14,7 +14,7 @@
 					<a href="connexion.php">Connexion</a>
 			</div> 
 			<div id="titre"> 
-				<p>Global Gaming Community</p>
+				<img src="img/title/tournament.jpg" alt="title image" height="175px" width="824px"/>
 			</div> 
 			<div class="cleardiv"></div>
 			<div id="menu">

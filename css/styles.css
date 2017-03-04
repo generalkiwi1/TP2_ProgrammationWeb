@@ -13,7 +13,7 @@
 #titre {
 	float: right;
 	width: 824px;
-	height: 150px;	
+	height: 175px;	
 	background-color:black;
 	color:white;
 	font-size:72px;
@@ -24,7 +24,7 @@
 #zoneconnexion {
 	float:right;
 	width: 824px;
-	height: 50px;
+	height: 25px;
 	background-color:yellow;
 	text-align:right;
 }
