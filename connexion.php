@@ -1,4 +1,5 @@
 <?php 
+	$_SESSION['indexPage'] = 5;
 	include 'entete.php';
 
 	include 'banniere.php';

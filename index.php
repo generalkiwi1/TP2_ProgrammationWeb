@@ -1,4 +1,8 @@
-<?php	include "entete.php";
+<?php	
+	session_start(); // Session pour les titres
+	$_SESSION['indexPage'] = 1;
+	
+	include "entete.php";
 	
 	include "banniere.php";
 ?>	
