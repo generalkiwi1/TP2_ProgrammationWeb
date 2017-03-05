@@ -1,4 +1,6 @@
 <?php 
+	session_start();
+
 	define("USERNAME1", "9vies");
 	define("PASSWORD1", "psswrd12");
 	define("USERNAME2", "Generalkiwi");
@@ -7,12 +9,12 @@
 	if ($_POST['username'] == USERNAME1 && $_POST['password'] == PASSWORD1) 
 	{
 		$_SESSION['username'] = $_POST['username'];
-		header('Location:connexion.php?connection=9vies est connecté');
+		header('Location:index.php?connection=9vies est connecté');
 	}
 	else if ($_POST['username'] == USERNAME2 && $_POST['password'] == PASSWORD2) 
 	{
 		$_SESSION['username'] = $_POST['username'];
-		header('Location:connexion.php?connection=Generalkiwi est connecté');
+		header('Location:index.php?connection=Generalkiwi est connecté');
 	}
 	else if ($_POST['username'] != USERNAME1 && $_POST['username'] != USERNAME2) 
 	{

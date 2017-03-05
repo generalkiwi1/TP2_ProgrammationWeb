@@ -21,7 +21,8 @@
 				<?php 
 					if (isset($_SESSION['username']) && !empty($_SESSION['username'])) 
 					{
-						echo '<a>Bienvenue, '.$_SESSION['username'].'</a>';
+						echo '<a>Bienvenue, '.$_SESSION['username'].' </a>';
+						echo '<a href="deconnexion.php">Deconnexion</a>';
 					}
 					else
 					{

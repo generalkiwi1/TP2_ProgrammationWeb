@@ -1,4 +1,5 @@
 <?php	
+	session_start();
 	$_SESSION['indexPage'] = 3; // Session pour les titres
 	include "entete.php";
 	
