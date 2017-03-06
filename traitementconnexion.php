@@ -3,18 +3,11 @@
 
 	define("USERNAME1", "9vies");
 	define("PASSWORD1", "psswrd12");
-	define("USERNAME2", "Generalkiwi");
-	define("PASSWORD2", "passwrd23");
 
 	if ($_POST['username'] == USERNAME1 && $_POST['password'] == PASSWORD1) 
 	{
 		$_SESSION['username'] = $_POST['username'];
-		header('Location:index.php?connection=9vies est connecté');
-	}
-	else if ($_POST['username'] == USERNAME2 && $_POST['password'] == PASSWORD2) 
-	{
-		$_SESSION['username'] = $_POST['username'];
-		header('Location:index.php?connection=Generalkiwi est connecté');
+		header('Location:confirmation.php?connection=Bienvenue '.$_SESSION['username'].', connexion réussie.');
 	}
 	else if ($_POST['username'] != USERNAME1 && $_POST['username'] != USERNAME2) 
 	{

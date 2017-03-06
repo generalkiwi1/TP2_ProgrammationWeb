@@ -23,5 +23,9 @@
 		{
 			echo 'Connexion';
 		}
+		else if($page == 6)
+		{
+			echo 'Confirmation';
+		}
 	}
 ?>
