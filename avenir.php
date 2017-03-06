@@ -1,4 +1,3 @@
-
 <?php	
 	session_start();
 	$_SESSION['indexPage']=2;
@@ -51,9 +50,7 @@
 							
 						}
 					}
-
-				}
-				
+				}			
 				foreach ($tableauTournoisBase as $currentLine) // Affichage
 				{
 					echo '<tr>';

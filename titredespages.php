@@ -1,5 +1,4 @@
 <?php
-
 	function afficherTitre($page) // affichage des titre selon la page
 	{
 		if($page == 1)
@@ -24,7 +23,5 @@
 		{
 			echo 'Connexion';
 		}
-	
 	}
-
 ?>

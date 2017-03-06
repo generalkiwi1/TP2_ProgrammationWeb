@@ -5,6 +5,7 @@
 	
 	include "banniere.php";
 ?>	
+
 	<div id="contenu">
 		
 	</div>
