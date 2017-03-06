@@ -66,12 +66,12 @@
 	height:100px;
 	background-color:gray;
 }
-#rechercheform{
+#form{
 	font-size: 20px;
 	text-align: left;
 	margin-left: 200px;
 }
-.rechercheformelements {
+.formelements {
 	margin-right: 200px;
 	float: right;
 }
