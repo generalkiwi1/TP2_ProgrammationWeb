@@ -87,7 +87,10 @@
 					</select>
 				</td>
 			</tr>
-		<button type="submit" value="submit">Submit</button>
+		</table>
+		<p align="center">
+			<button type="submit" value="submit">Submit</button>
+		</p>
 			
 	</form>
 </div>
