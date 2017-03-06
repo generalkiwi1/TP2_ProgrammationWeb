@@ -39,12 +39,17 @@
 				</div>
 				<div class="itembar">
 					<a href="avenir.php">Avenir</a> 
-				</div> 
-				<div class="itembar">
-					<a href="enregistrement.php">Enregistrement</a>
 				</div>
 				<div class="itembar">
 					<a href="recherche.php">Recherche</a> 
-				</div>
+				</div> 
+				<div class="itembar">
+					<?php 
+						if (isset($_SESSION['username']) && !empty($_SESSION['username'])) 
+						{
+							echo '<a href="enregistrement.php">Enregistrement</a>';
+						}
+					 ?>
+				</div>			
 			</div>
 		<div class="cleardiv"></div> 
