@@ -1,5 +1,6 @@
 
 <?php	
+	session_start();
 	$_SESSION['indexPage']=2;
 	include "entete.php";
 	

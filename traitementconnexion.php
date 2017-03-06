@@ -6,32 +6,22 @@
 	define("USERNAME2", "Generalkiwi");
 	define("PASSWORD2", "passwrd23");
 
-	$_SESSION['username'] = $_POST['username']; 
-	$_SESSION['password'] = $_POST['password'];
-
-	if ($_SESSION['username'] == USERNAME1 && $_SESSION['password'] == PASSWORD1) 
+	if ($_POST['username'] == USERNAME1 && $_POST['password'] == PASSWORD1) 
 	{
-		header('Location:connexion.php?erreur=9vies est connecté');
+		$_SESSION['username'] = $_POST['username'];
+		header('Location:index.php?connection=9vies est connecté');
 	}
-	else if ($_SESSION['username'] == USERNAME2 && $_SESSION['password'] == PASSWORD2) 
+	else if ($_POST['username'] == USERNAME2 && $_POST['password'] == PASSWORD2) 
 	{
-		header('Location:connexion.php?erreur=Generalkiwi est connecté');
+		$_SESSION['username'] = $_POST['username'];
+		header('Location:index.php?connection=Generalkiwi est connecté');
+	}
+	else if ($_POST['username'] != USERNAME1 && $_POST['username'] != USERNAME2) 
+	{
+		header('Location:connexion.php?erreur1=Nom d\'utilisateur incorrect');
 	}
 	else
 	{
-		header('Location:connexion.php?erreur=Nom d\'utilisateur ou mot de passe incorrect');
+		header('Location:connexion.php?erreur2=Mot de passe incorrect');
 	}
-
-	function ValiderUtilisateur()
-	{
-		if ($_SESSION['username'] == USERNAME1 && $_SESSION['password'] == PASSWORD1) 
-		{
-			header('Location:connexion.php?erreur=9vies est connecté');
-		}
-		else if ($_SESSION['username'] == USERNAME2 && $_SESSION['password'] == PASSWORD2) 
-		{
-			header('Location:connexion.php?erreur=Generalkiwi est connecté');
-		}
-	}
-
  ?>

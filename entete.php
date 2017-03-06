@@ -18,7 +18,17 @@
 
 			<div id="logo"><img src="img/Logo/logo.png" alt="logo" /></div>
 			<div id="zoneconnexion">
-					<a href="connexion.php">Connexion</a>
+				<?php 
+					if (isset($_SESSION['username']) && !empty($_SESSION['username'])) 
+					{
+						echo '<a>Bienvenue, '.$_SESSION['username'].' </a>';
+						echo '<a href="deconnexion.php">Deconnexion</a>';
+					}
+					else
+					{
+						echo '<a href="connexion.php">Connexion</a>';
+					}
+				 ?>
 			</div> 
 			<div id="titre"> 
 				<img src="img/title/tournament.jpg" alt="title image" height="175px" width="824px"/>
