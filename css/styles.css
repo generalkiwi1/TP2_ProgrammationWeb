@@ -69,3 +69,23 @@
 #connectionleft {
 	float: left;
 }
+#rechercheform{
+	font-size: 20px;
+	text-align: left;
+	margin-left: 200px;
+}
+.rechercheformelements {
+	margin-right: 200px;
+	float: right;
+}
+.submitbutton {
+	height: 30px;
+	width: 160px;
+	margin-left: 124px;
+	margin-right: 200px;
+}
+.title {
+	text-align: center;
+	font-size: 42px;
+
+}
