@@ -1,5 +1,4 @@
-	<div id="pieddepage">
-		
+	<div id="pieddepage">	
 	</div>
 	</div>
 	</body>
