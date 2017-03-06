@@ -66,7 +66,23 @@
 	height:100px;
 	background-color:gray;
 }
+#form{
+	font-size: 20px;
+	text-align: left;
+	margin-left: 200px;
+}
+.formelements {
+	margin-right: 200px;
+	float: right;
+}
+.submitbutton {
+	height: 30px;
+	width: 160px;
+	margin-left: 124px;
+	margin-right: 200px;
+}
+.title {
+	text-align: center;
+	font-size: 42px;
 
-.error {
-	color:#FF0000;
 }
