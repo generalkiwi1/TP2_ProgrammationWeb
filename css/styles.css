@@ -50,12 +50,14 @@
 #banniere {
 	float:left;
 	width:200px;
+	height:800px;
 	background-color:green;
 }
 
 #contenu {
 	float:right;
 	width:824px;
+	height:900px;
 	background-color:brown;
 }
 
@@ -63,7 +65,4 @@
 	width:1024px;
 	height:100px;
 	background-color:gray;
-}
-#connectionleft {
-	float: left;
 }
