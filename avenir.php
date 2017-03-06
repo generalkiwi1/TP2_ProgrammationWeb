@@ -6,22 +6,23 @@
 	include "banniere.php";
 ?>	
 	<div id="contenu">
-		<?php 
-			$fichier = "..\\TP2_ProgrammationWeb\\data\\tournois.txt";
-			$ressource = fopen($fichier  ,'r');
-			$tableauTournoisBase = file($fichier);
-		?>
-				<table align="center" border="1">
-					<tr>
-						<th>Nom du tournoi</th>
-						<th>Date du tournoi</th>
-						<th>Ville</th>
-						<th>Pays</th>
-						<th>Jeu</th>
-						<th>Nombre de joueurs maximum</th>
-					</tr>
-		<?php 
-				// C'est très cancer help sorting manual array
+	<?php 
+		$fichier = "..\\TP2_ProgrammationWeb\\data\\tournois.txt";
+		$ressource = fopen($fichier  ,'r');
+		$tableauTournoisBase = file($fichier);
+	?>
+	<table align="center" border="1">
+		<h1 align="center">Tournois finis</h1>
+			<tr>
+				<th>Nom du tournoi</th>
+				<th>Date du tournoi</th>
+				<th>Ville</th>
+				<th>Pays</th>
+				<th>Jeu</th>
+				<th>Nombre de joueurs maximum</th>
+			</tr>
+			<?php 
+				// Sorting manual array
 				$tableauDesDates = array(); // Tableau des dates
 				for ($i = 0; $i < sizeof($tableauTournoisBase); $i++)
 				{
@@ -34,6 +35,10 @@
 						}
 					}
 				}
+				
+				$tableauFini = array();
+				$tableauAvenir = array();
+				
 				for ($j = 0; $j < sizeof($tableauTournoisBase); $j++) // Mettre le tableau de base en ordre
 				{
 					for ($i = 0; $i < sizeof($tableauTournoisBase)-1; $i++)
@@ -50,8 +55,51 @@
 							
 						}
 					}
-				}			
-				foreach ($tableauTournoisBase as $currentLine) // Affichage
+				}
+		
+				for ($i = 0; $i < sizeof($tableauTournoisBase); $i++) // Séparation des tableaux
+				{
+					if ($tableauDesDates[$i] < time())
+					{
+						$tableauFini[$i] = $tableauTournoisBase[$i];
+					}
+					else 
+					{
+						$tableauAvenir[$i] = $tableauTournoisBase[$i];
+					}
+				}
+				
+				foreach ($tableauFini as $currentLine) // Affichage
+				{
+					echo '<tr>';
+					$splittedLine = explode("|",$currentLine);
+					foreach ($splittedLine as $element)
+					{
+						if ($element > 1000000000)
+						{
+							echo '<td>'.date('l jS \of F Y h:i:s A',$element).'</td>';
+						}
+						else
+						{
+							echo '<td>'.$element.'</td>';
+						}
+					}
+					echo '</tr>';
+				}
+				echo '</table>'; // Fermeture tableau 1
+			?>
+			<table align="center" border="1">
+				<h1 align="center" font="72px">Tournois avenir</h1>
+					<tr>
+						<th>Nom du tournoi</th>
+						<th>Date du tournoi</th>
+						<th>Ville</th>
+						<th>Pays</th>
+						<th>Jeu</th>
+						<th>Nombre de joueurs maximum</th>
+					</tr>
+				<?php 
+				foreach ($tableauAvenir as $currentLine) // Affichage
 				{
 					echo '<tr>';
 					$splittedLine = explode("|",$currentLine);
@@ -69,9 +117,9 @@
 					echo '</tr>';
 				}
 				echo '</table>';
-				
 			fclose($ressource);
 		?>
+		
 	</div>
 	<div class="cleardiv">
 		

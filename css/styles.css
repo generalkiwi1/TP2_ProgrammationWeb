@@ -50,14 +50,12 @@
 #banniere {
 	float:left;
 	width:200px;
-	height:800px;
 	background-color:green;
 }
 
 #contenu {
 	float:right;
 	width:824px;
-	height:800px;
 	background-color:brown;
 }
 
