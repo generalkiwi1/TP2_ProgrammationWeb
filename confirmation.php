@@ -7,7 +7,7 @@
 	include "banniere.php";
 ?>	
 	<div id="contenu">
-		<p>
+		<p id="confirmation">
 			<?php 
 				if(isset($_GET['connection']) && !empty($_GET['connection'])) 
 				{

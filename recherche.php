@@ -7,7 +7,7 @@
 ?>	
 	<div id="contenu">
 		<h1 class="title">Rechercher un tournoi</h1><br><br><br>
-		<form action="traitementrecherche.php" method="post" id="form">
+		<form action="traitementrecherche.php" method="post" class="form">
 			Nom d'événement:<input type="text" name="tournamentname" maxlength="30" class="formelements"><br><br>
 			Année:<select name="year" class="formelements">	
 					<option value="2015">2015</option>

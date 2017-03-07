@@ -1,3 +1,10 @@
+#imgbg {
+	background-image: url('../img/img_bg.jpg');
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-size: 100% 100%;
+}
+
 #gabarit {
 	width:1024px;
 	margin:auto;
@@ -7,7 +14,8 @@
 	float:left;
 	width:200px;
 	height:200px;
-	background-color:blue;
+	background-color:rgb(92,234,239);
+	border-radius: 100px; 
 }
 
 #titre {
@@ -19,38 +27,56 @@
 	font-size:72px;
 }
 
-
-
 #zoneconnexion {
 	float:right;
 	width: 824px;
 	height: 25px;
-	background-color:yellow;
+	background-color:rgb(92,234,239);
 	text-align:right;
+	border-radius: 15px 15px 0px 0px;
 }
 
 .cleardiv {
 	clear:both;
 }
 
+#confirmation {
+	text-align: center;
+	font-family: "Segoe UI", Segoe, Sans;
+	font-size: 20px;
+}
+
+.paragraphescontenu 
+{
+	float: left;
+	margin-left: 40px;
+	font-family: "Segoe UI", Segoe, Sans;
+	font-size: 20px;
+}
 #menu {
 	width:100%;
 	height: 50px;
 	float:left;
-	background-color:red;
+	background-color:rgb(92,234,239);
+	border-radius: 15px 0px 0px 0px;
 }
 
 .itembar {
 	width:25%;
 	float:left;
 	height:100%;
-	text-align:center;	
+	text-align:center;
+}
+.menulinks {
+	font-family: "Segoe UI", Segoe, Sans;
+	font-size: 25px;
+	text-decoration: none;	
 }
 
 #banniere {
 	float:left;
 	width:200px;
-	height:800px;
+	height:900px;
 	background-color:green;
 }
 
@@ -58,31 +84,65 @@
 	float:right;
 	width:824px;
 	height:900px;
-	background-color:brown;
+	background-color:rgb(255,255,255);
 }
 
 #pieddepage {
 	width:1024px;
 	height:100px;
 	background-color:gray;
+	border-radius: 0px 0px 15px 15px;
 }
-#form{
+
+#ppdp {
+	font-size: 12px;
+	float: right;
+	margin-right: 20px;
+	margin-top: 75px;
+}
+#connectionleft{
+	font-family: "Segoe UI", Segoe, Sans;
+	text-decoration: none;
+	margin-left: 10px;
+	float: left;
+}
+
+.connectionright{
+	font-family: "Segoe UI", Segoe, Sans;
+	text-decoration: none;
+	margin-right: 10px;
+	float: right;
+}
+
+.form{
+	font-family: "Segoe UI", Segoe, Sans;
 	font-size: 20px;
 	text-align: left;
 	margin-left: 200px;
 }
+
 .formelements {
+	font-family: "Segoe UI", Segoe, Sans;
 	margin-right: 200px;
 	float: right;
 }
+
 .submitbutton {
 	height: 30px;
 	width: 160px;
 	margin-left: 124px;
 	margin-right: 200px;
 }
+
 .title {
+	font-family: "Segoe UI", Segoe, Sans;
 	text-align: center;
 	font-size: 42px;
 
+}
+
+.feedback {
+	font-family: "Segoe UI", Segoe, Sans;
+	color: rgb(200,0,0);
+	font-size: 16px;
 }
