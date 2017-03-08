@@ -91,8 +91,8 @@
 
 #pieddepage {
 	width:1024px;
-	height:100px;
-	background-color:gray;
+	height:50px;
+	background-color:rgb(92,234,239);
 	border-radius: 0px 0px 15px 15px;
 }
 
@@ -148,8 +148,6 @@
 	font-size: 16px;
 }
 
-#formenregistrement {
-	font-family: "Segoe UI", Segoe, Sans;
-	font-size: 20px;
-
+.error {
+	color:#FF0000
 }

@@ -44,7 +44,7 @@
 				{
 					for ($i = 0; $i < sizeof($tableauTournoisBase)-1; $i++)
 					{
-						if ($tableauDesDates[$i] > $tableauDesDates[$i+1] )
+						if ($tableauDesDates[$i] > $tableauDesDates[$i+1])
 						{
 							$temporaire1 = $tableauDesDates[$i]; // Échange des valeurs dans le tableau des dates
 							$tableauDesDates[$i] = $tableauDesDates[$i+1];
