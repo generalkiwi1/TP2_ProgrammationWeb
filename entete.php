@@ -12,7 +12,7 @@
 	<link href="css/styles.css" rel="stylesheet" />
 	<script src="js/script.js"></script>
 </head>
-	<body>
+	<body id="imgbg">
 		<div id="gabarit"> 
 
 			<div id="logo"><img src="img/Logo/logo.png" alt="logo" /></div>
@@ -21,11 +21,11 @@
 					if (isset($_SESSION['username']) && !empty($_SESSION['username'])) 
 					{
 						echo '<a href="deconnexion.php" id="connectionleft">Deconnexion</a>';
-						echo '<a>Bienvenue, '.$_SESSION['username'].' </a>';					
+						echo '<a class="connectionright">Bienvenue, '.$_SESSION['username'].' </a>';					
 					}
 					else
 					{
-						echo '<a href="connexion.php">Connexion</a>';
+						echo '<a href="connexion.php" class="connectionright">Connexion</a>';
 					}
 				 ?>
 			</div> 
@@ -35,19 +35,19 @@
 			<div class="cleardiv"></div>
 			<div id="menu">
 				<div class="itembar">
-					<a href="index.php">Accueil</a> 
+					<a href="index.php" class="menulinks">Accueil</a> 
 				</div>
 				<div class="itembar">
-					<a href="avenir.php">Avenir</a> 
+					<a href="avenir.php" class="menulinks">Avenir</a> 
 				</div>
 				<div class="itembar">
-					<a href="recherche.php">Recherche</a> 
+					<a href="recherche.php" class="menulinks">Recherche</a> 
 				</div> 
 				<div class="itembar">
 					<?php 
 						if (isset($_SESSION['username']) && !empty($_SESSION['username'])) 
 						{
-							echo '<a href="enregistrement.php">Enregistrement</a>';
+							echo '<a href="enregistrement.php" class="menulinks">Enregistrement</a>';
 						}
 					 ?>
 				</div>			

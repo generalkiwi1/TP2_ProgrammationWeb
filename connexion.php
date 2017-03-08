@@ -5,32 +5,43 @@
 	include 'banniere.php';
  ?>
  	<div id="contenu">
- 		<form action="traitementconnexion.php" method="post">
-			Nom d'utilisateur: <input type="text" name="username" maxlength="8">
-			<?php 
-				if(isset($_GET['erreur1']) && !empty($_GET['erreur1'])) 
-				{
-				 	echo $_GET['erreur1'];
-				} 
-			 ?>	
-			<br>
-			Mot de passe: <input type="password" name="password" maxlength="8">
-			<?php 
-				if(isset($_GET['erreur2']) && !empty($_GET['erreur2'])) 
-				{
-				 	echo $_GET['erreur2'];
-				} 
-			 ?>	
-			<br>
-			<button type="Submit" value="Submit">Connexion</button>
-			<p id="erreur"></p>
-			<?php 
-				if(isset($_GET['connection']) && !empty($_GET['connection'])) 
-				{
-				 	echo $_GET['connection'];
-				} 
-				
-			 ?>	
+ 		<h1 class="title">Connexion</h1><br><br><br>
+ 		<form action="traitementconnexion.php" method="post" class="form">
+			Nom d'utilisateur:<input type="text" name="username" maxlength="8" class="formelements">
+			<p class="feedback">
+				<?php 
+					if(isset($_GET['erreur1']) && !empty($_GET['erreur1'])) 
+					{
+					 	echo $_GET['erreur1'];
+					}
+					else
+					{
+					 	echo '<br>';
+					} 
+				 ?>	
+			</p>
+			Mot de passe:<input type="password" name="password" maxlength="8" class="formelements">
+			<p class="feedback">
+				<?php 
+					if(isset($_GET['erreur2']) && !empty($_GET['erreur2'])) 
+					{
+					 	echo $_GET['erreur2'];
+					}
+					else
+					{
+					 	echo '<br>';
+					}  
+			 	?>	
+			</p>
+			<button type="Submit" value="Submit" class="submitbutton">Connexion</button>
+			<p class="feedback">
+				<?php 
+					if(isset($_GET['connection']) && !empty($_GET['connection'])) 
+					{
+					 	echo $_GET['connection'];
+					} 				
+				 ?>	
+			</p>
 		</form>
  	</div>
  	<div class="cleardiv">
