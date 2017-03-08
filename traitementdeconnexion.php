@@ -8,7 +8,7 @@
 	session_unset('username');
  ?>
  	<div id="contenu">
- 		<h1 class="title">Vous vous êtes déconnecter</h1><br><br><br>
+ 		<h1 class="title">Vous vous êtes déconnecté</h1><br><br><br>
 		<?php 
 			header('refresh:3;url=index.php');
 		 ?>
