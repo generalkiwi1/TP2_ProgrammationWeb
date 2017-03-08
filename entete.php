@@ -20,7 +20,7 @@
 				<?php 
 					if (isset($_SESSION['username']) && !empty($_SESSION['username'])) 
 					{
-						echo '<a href="deconnexion.php" id="connectionleft">Deconnexion</a>';
+						echo '<a href="traitementdeconnexion.php" id="connectionleft">Deconnexion</a>';
 						echo '<a class="connectionright">Bienvenue, '.$_SESSION['username'].' </a>';					
 					}
 					else
