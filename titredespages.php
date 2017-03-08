@@ -27,5 +27,9 @@
 		{
 			echo 'Confirmation';
 		}
+		else if($page == 7)
+		{
+			echo 'Confirmation Enregistrement';
+		}
 	}
 ?>

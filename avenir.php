@@ -1,5 +1,6 @@
 <?php	
 	session_start();
+	date_default_timezone_set('EST');
 	$_SESSION['indexPage']=2;
 	include "entete.php";
 	

@@ -9,27 +9,56 @@
 
 
 <div id="contenu">
+	<h1 align="center">Enregistrement de tournoi</h1>
 	<form action="traitementenregistrement.php" method="post">
 		<table align="center">
 			<tr>
 				<td>Nom d'événement </td>
 				<td><input type="text" name="tournamentname" maxlength="30"></td>
-			</tr>
-			<tr>
-				<td>Nombre de joueurs max</td>
-				<td><input type="text" name="maxplayer" maxlength="3"></td>
+				<td class="error">
+					<?php
+						if(isset($_GET['erreurEvent1'])&& !empty($_GET['erreurEvent1']))
+						{
+							echo $_GET['erreurEvent1'];
+						}
+					?>				
+				</td>
 			</tr>
 			<tr>
 				<td>Nom de la ville </td>
 				<td><input type="text" name="cityname" maxlength="15"></td>
+				<td class="error">
+					<?php
+						if(isset($_GET['erreurVille'])&& !empty($_GET['erreurVille']))
+						{
+							echo $_GET['erreurVille'];
+						}
+					?>				
+				</td>
 			</tr>
 			<tr>
 				<td>Nom du pays </td>
 				<td><input type="text" name="countryname" maxlength="15"></td>
+				<td class="error">
+					<?php
+						if(isset($_GET['erreurPays'])&& !empty($_GET['erreurPays']))
+						{
+							echo $_GET['erreurPays'];
+						}
+					?>				
+				</td>
 			</tr>
 			<tr>
 				<td>Nom du jeu </td>
 				<td><input type="text" name="gamename" maxlength="30"></td>
+				<td class="error">
+					<?php
+						if(isset($_GET['erreurJeu'])&& !empty($_GET['erreurJeu']))
+						{
+							echo $_GET['erreurJeu'];
+						}
+					?>				
+				</td>
 			</tr>
 			<tr>
 				<td>Date </td>
@@ -88,9 +117,34 @@
 					</select>
 				</td>
 			</tr>
+			<tr>
+				<td>Nombre de joueurs max</td>
+				<td><input type="number" name="maxplayer" min="10" max="1000"></td>
+				<td class="error">
+					<?php
+						if(isset($_GET['erreurJoueurs'])&& !empty($_GET['erreurJoueurs']))
+						{
+							echo $_GET['erreurJoueurs'];
+						}
+					?>				
+				</td>
+			</tr>
 		</table>
 		<p align="center">
 			<button type="submit" value="submit">Submit</button>
+		</p>
+		<p class="error" align="center">
+			<?php
+				if(isset($_GET['erreurEvent2'])&& !empty($_GET['erreurEvent2']))
+				{
+					echo $_GET['erreurEvent2'];
+				}
+				
+				if(isset($_GET['erreurDate'])&& !empty($_GET['erreurDate']))
+				{
+					echo $_GET['erreurDate'];
+				}
+			?>
 		</p>
 			
 	</form>
