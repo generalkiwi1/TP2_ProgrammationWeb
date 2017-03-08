@@ -9,8 +9,8 @@
 
 
 <div id="contenu">
-	<h1 align="center">Enregistrement de tournoi</h1>
-	<form action="traitementenregistrement.php" method="post">
+	<h1 align="center" class="title">Enregistrement de tournoi</h1>
+	<form action="traitementenregistrement.php" method="post" id="formenregistrement">
 		<table align="center">
 			<tr>
 				<td>Nom d'événement </td>
