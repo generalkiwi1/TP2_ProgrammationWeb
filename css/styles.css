@@ -84,5 +84,7 @@
 .title {
 	text-align: center;
 	font-size: 42px;
-
+}
+.error {
+	color:#FF0000;
 }

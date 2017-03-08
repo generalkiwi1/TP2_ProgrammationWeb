@@ -1,4 +1,5 @@
 <?php
+	$eventErr = $cityErr = $countryErr = $gameErr = $maxGamerErr = $dateErr = "Allo Test";
 	
 	echo $_POST['tournamentname'].'<br>';
 	echo $_POST['maxplayer'].'<br>';

@@ -4,6 +4,7 @@
 	include "entete.php";
 	
 	include "banniere.php";
+
 ?>	
 
 
