@@ -31,5 +31,9 @@
 		{
 			echo 'Confirmation Enregistrement';
 		}
+		else if ($page == 8)
+	    {
+			echo 'Résultats';
+		}
 	}
 ?>
