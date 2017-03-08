@@ -12,7 +12,7 @@
 		$ressource = fopen($fichier  ,'r');
 		$tableauTournoisBase = file($fichier);
 	?>
-	<table align="center" border="1">
+	<table align="center" border="1"> 
 		<h1 align="center">Tournois finis</h1>
 			<tr>
 				<th>Nom du tournoi</th>
