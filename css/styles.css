@@ -148,6 +148,11 @@
 	font-size: 16px;
 }
 
+#formenregistrement {
+	font-family: "Segoe UI", Segoe, Sans;
+	font-size: 20px;
+}
+
 .error {
 	color:#FF0000
 }
