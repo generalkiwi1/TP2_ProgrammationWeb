@@ -6,23 +6,55 @@
 	$ressource = fopen($filepath, 'r');
 
 	$tableau = file($filepath);
+
+
+	$arrayFile = array();
 	foreach ($tableau as $line) 
 	{
 		$array = explode('|', $line);
 		
 		foreach ($array as $element) 
 		{
-			if ($_POST['tournamentname'] == $element || $_POST['cityname'] == $element || $_POST['gamename'] == $element || time("Y", $_POST['year']) == ) 
+			if (isset($_POST['tournamentname']) && !empty($_POST['tournamentname'])) 
 			{
-				$_SESSION['results'] = $line;
-				var_dump($_SESSION['results']);
-				break;
+				if ($element == $_POST['tournamentname']) 
+				{
+					$arrayFile[] = $line;
+					break;
+				}
+			}
+			else if (isset($_POST['cityname']) && !empty($_POST['cityname']))
+			{
+				if ($element == $_POST['cityname']) 
+				{
+					$arrayFile[] = $line;
+					break;
+				}
+			}
+			else if (isset($_POST['gamename']) && !empty($_POST['gamename']))
+			{
+				if ($element == $_POST['cityname']) 
+				{
+					$arrayFile[] = $line;
+					break;
+				}
+			}
+			else if (isset($_POST['year']) && !empty($_POST['year']))
+			{
+				var_dump(time("Y", $element));
 
+				//else if (time("Y", $element) == $_POST['year']) 
+				//{
+			//		$arrayFile[] = $line;
+			//		break;
+				//}
 			}
 		}
 	}	
 	fclose($ressource);
 
+	$_SESSION['results'] = $arrayFile;
+	//var_dump($arrayFile);
 	//header('Location:resultatsrecherche.php?erreur=');
 
 
