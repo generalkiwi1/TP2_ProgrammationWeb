@@ -17,7 +17,7 @@
 
 			<div id="logo"><img src="img/Logo/logo.png" alt="logo" /></div>
 			<div id="zoneconnexion">
-				<?php 
+				<?php // Connexion des admins
 					if (isset($_SESSION['username']) && !empty($_SESSION['username'])) 
 					{
 						echo '<a href="traitementdeconnexion.php" id="connectionleft">Deconnexion</a>';
@@ -44,7 +44,7 @@
 					<a href="recherche.php" class="menulinks">Recherche</a> 
 				</div> 
 				<div class="itembar">
-					<?php 
+					<?php // Enregistrement quand l'admin est présent
 						if (isset($_SESSION['username']) && !empty($_SESSION['username'])) 
 						{
 							echo '<a href="enregistrement.php" class="menulinks">Enregistrement</a>';

@@ -1,5 +1,5 @@
 <?php 
-	session_start();
+	session_start(); // Getting the session
 	$fichier = "..\\TP2_ProgrammationWeb\\data\\admins.txt";
 	$ressource = fopen($fichier  ,'r');
 	$tableauAdmin = file($fichier);
@@ -21,7 +21,7 @@
 	
 	switch ($i) 
 	{
-		case 0:
+		case 0: // bob leponge code
 			$nomCode = explode("|",$tableauAdmin[$i]);
 			if ($_POST['username'] == $nomCode[0] && $_POST['password'] == "leponge")
 			{
@@ -39,7 +39,7 @@
 			}
 		break;
 		
-		case 1:
+		case 1: // patrick star code
 			$nomCode = explode("|",$tableauAdmin[$i]);
 			if ($_POST['username'] == $nomCode[0] && $_POST['password'] == "star")
 			{
@@ -57,7 +57,7 @@
 			}
 		break;
 		
-		case 2:
+		case 2: // admin admin123 code
 			$nomCode = explode("|",$tableauAdmin[$i]);
 			if ($_POST['username'] == $nomCode[0] && $_POST['password'] == $nomCode[1])
 			{
@@ -76,5 +76,9 @@
 		break;
 		
 	}
+	
+	
+	
+	
 	fclose($ressource);
  ?>

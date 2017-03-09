@@ -1,6 +1,6 @@
 <?php	
-	session_start();
-	date_default_timezone_set('EST');
+	session_start(); // Getting session data
+	date_default_timezone_set('EST'); // Time zone session
 	$_SESSION['indexPage']=2;
 	include "entete.php";
 	
@@ -11,9 +11,10 @@
 		$fichier = "..\\TP2_ProgrammationWeb\\data\\tournois.txt";
 		$ressource = fopen($fichier  ,'r');
 		$tableauTournoisBase = file($fichier);
+		// Tableau des tournois finis
 	?>
 	<table align="center" border="1"> 
-		<h1 align="center">Tournois finis</h1>
+		<h1 align="center">Tournois finis</h1> 
 			<tr>
 				<th>Nom du tournoi</th>
 				<th>Date du tournoi</th>
@@ -37,7 +38,7 @@
 					}
 				}
 				
-				$tableauFini = array();
+				$tableauFini = array(); // Séparation en 2 tableaux
 				$tableauAvenir = array();
 				
 				for ($j = 0; $j < sizeof($tableauTournoisBase); $j++) // Mettre le tableau de base en ordre
@@ -70,7 +71,7 @@
 					}
 				}
 				
-				foreach ($tableauFini as $currentLine) // Affichage
+				foreach ($tableauFini as $currentLine) // Affichage tableau fini
 				{
 					echo '<tr>';
 					$splittedLine = explode("|",$currentLine);
@@ -100,7 +101,7 @@
 						<th>Nombre de joueurs maximum</th>
 					</tr>
 				<?php 
-				foreach ($tableauAvenir as $currentLine) // Affichage
+				foreach ($tableauAvenir as $currentLine) // Affichage tableau avenir
 				{
 					echo '<tr>';
 					$splittedLine = explode("|",$currentLine);
@@ -118,7 +119,7 @@
 					echo '</tr>';
 				}
 				echo '</table>';
-			fclose($ressource);
+			fclose($ressource); // fermeture du fichier
 		?>
 		
 	</div>

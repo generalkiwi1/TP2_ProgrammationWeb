@@ -4,7 +4,7 @@
 	include "entete.php";
 	
 	include "banniere.php";
-
+	// Choix possible pour l'utilisateur + erreurs possibles
 ?>	
 
 
