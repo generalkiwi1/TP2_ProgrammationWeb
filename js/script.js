@@ -3,7 +3,7 @@ var tableau = ["img/ville/londre.jpg","img/ville/moscow.jpg","img/ville/paris.jp
 var compteur = 0;
 var timer = setInterval(mytimer, 10000);
 
-
+// Rotation des images
 function mytimer() {
 		if (compteur == 3)
 	{

@@ -8,7 +8,7 @@
 ?>	
 	<div id="contenu">
 		<p id="confirmation">
-			<?php 
+			<?php // Message de comfirmation
 				if(isset($_GET['connection']) && !empty($_GET['connection'])) 
 				{
 				 	echo $_GET['connection'];

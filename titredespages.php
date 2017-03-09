@@ -31,7 +31,11 @@
 		{
 			echo 'Confirmation Enregistrement';
 		}
-		else if ($page == 8)
+		else if($page == 8)
+		{
+			echo 'Déconnection';
+		}
+		else if ($page == 9)
 	    {
 			echo 'Résultats';
 		}
